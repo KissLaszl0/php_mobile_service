@@ -37,7 +37,7 @@ function getPathWithId($url)
 }
 
 
-// compile Template Functio für seiten concatination
+// compile Template Function für seiten concatination
 function compileTemplate($filePath, $params = []): string
 {
     ob_start();
@@ -73,7 +73,7 @@ function getHerstellers()
     return $herstellers;
 }
 
-// Home seite
+
 function home()
 {
 
@@ -175,6 +175,7 @@ function contact()
         'footer' => $footer,
     ]);
 }
+
 // Get Connection for Database
 function getConnectionPDO()
 {
@@ -265,5 +266,5 @@ function minPreisUploader($types)
 
 function notFoundHandler()
 {
-    echo "Oldal nem található";
+    echo "Seite nicht gefunden";
 }
