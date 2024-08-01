@@ -1,0 +1,25 @@
+<div class=" container section mt-4">
+    <h2>Herstellers</h2>
+    <div class="row list-thumbnail brand">
+    <div class="col-sm-8">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+        <div> 
+        <div class="col-sm-8 logo-flex ">
+            
+                    <?php foreach ($params['herstellers'] as $key) :?>
+                        <div class="logos" style="padding: 20px;">
+                        <a  href="/?type=<?= $key['id'] ?>" class="">
+                        <?= isset($key['logo']) ? $key['logo'] :$key['type'] ?>
+                        </a>
+                        </div>
+                    <?php endforeach; ?> 
+            </div>
+
+        </div>
+        <div class="col-sm-4">
+            <a href="#" target="_blank" class="thumbnail">
+                <img src="/public/assets/img/logo4.jpg" alt="" />
+            </a>
+        </div>
+    </div>
+</div>

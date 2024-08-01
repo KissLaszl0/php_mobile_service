@@ -1,0 +1,72 @@
+<div class=" container section mt-4">
+    <h2></h2>
+    <div class="row list-thumbnail brand">
+        <div class="col-sm-8">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+
+
+        <div class="col-sm-8 logo-flex ">
+
+            <?php foreach ($params['herstellers'] as $key) : ?>
+                <?php if (isset($key['name'])) : ?>
+                    <div class="logos" style="padding: 20px;">
+                        <a href="/?type=<?= $key['id'] ?>" class="">
+                            <?= isset($key['logo']) ? $key['logo'] : $key['type'] ?>
+                        </a>
+                    </div>
+                <?php elseif (isset($key['preis'])) : ?>
+                    <div class="logos rep-border" style="padding: 20px;">
+                        <a href="/?auftrag=<?= $key['type'] ?>" class="">
+                            <h5><?= $key['type'] ?></h5>
+                            <p> für <?= $key['preis'] ?>€</p>
+                            <h6><?= $key['reparaturArt'] ?></h6>
+                            <p>Artikel-Nr.:<?= $key['preiseID'] ?></p>
+                        </a>
+                    </div>
+                <?php else : ?>
+
+                    <div class="logos logo-border" style="margin: 20px; padding:20px">
+                        
+                            <a href="/?preise=<?= $key['type'] ?>" class="">
+                                <h5><?= $key['type'] ?></h5>
+                                <h5></h5>
+                            </a>
+                        
+                        </div>
+                        <?php endif; ?>
+
+                    <?php endforeach; ?>
+                    <?php if (isset($key['name'])) : ?>
+
+                    <?php elseif (isset($key['preis'])) : ?>
+                        <div class="logos" style="padding: 20px;">
+                            <div></div>
+                            <a href="/?type=<?= $key['herstellerID'] ?>" class="">
+                                <p> zuruck </p>
+                            </a>
+                        </div>
+
+                    <?php else : ?>
+                        <div class="logos logo-border" style="padding: 20px;">
+                           
+                            <a href="/" class="">
+                                <p> zuruck </p>
+                            </a>
+                        </div>
+                    <?php endif; ?>
+                        </div>
+
+                        <div class="col-sm-4">
+                            <div class="text-center">
+                                <h4>Reparatur vor Ort durch Profis</h4>
+                                <h6>Handyreparatur bei gebrochenem Display, Kratzern oder fehlerhaftem Akku</h6>
+                            </div>
+                            <a href="#" target="_blank" class="thumbnail">
+                                <img src="/public/assets/img/mobilerepair.jpg" alt="" />
+                            </a>
+                            <h5>* Schnellste Kundendiest in Hamburg</h5>
+                            <h5>* Ausgezeichnete Kundenzufriedenheit</h5>
+                            <h5>* Unschlagbare Preisen</h5>
+                        </div>
+                    </div>
+
+        </div>

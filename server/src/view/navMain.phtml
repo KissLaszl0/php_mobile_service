@@ -1,0 +1,171 @@
+<nav class="nav-main">
+	<a href="javascript:void(0);" class="nav-toggle"><i class="fa fa-align-justify"></i></a>
+	<ul class="inner-nav-main">
+		<li class="category">
+			<a href="#">
+				<div class="nav-text">
+					<h2>Smartphone</h2>
+				</div>
+				<i class="fa fa-angle-right"></i>
+			</a>
+			<div class="nav-sub">
+				<ul class="inner-nav-sub">
+					<li class="col-xs-4">
+						<h4>Reparatur</h4>
+						<ul>
+							<li>
+								<a href="http://www.google.com">New Products</a>
+							</li>
+							<?php foreach ($params['herstellers'] as $key) :?>
+							<li class="menu">
+							<a href="/?type=<?= $key['id'] ?>" class="sub-menu-toggle"><?= $key['name'] ?> 
+							<div class="label label-danger"><div class="arrow"></div>New</div> 
+							<span class="fa fa-angle-right"></span></a>
+							</li>
+
+							<?php endforeach; ?>
+						<!-- 	<li class="sub-menu">
+								<a href="#" class="sub-menu-toggle">Apple <div class="label label-danger"><div class="arrow"></div>New</div> <span class="fa fa-angle-right"></span></a>
+								<ul>
+									
+									<li>
+										<a href="list-product.php">Samsung</a>
+									</li>
+									<li>
+										<a href="list-product.php">Huawei</a>
+									</li>
+									<li>
+										<a href="list-product.php">LG</a>
+									</li>
+									<li>
+										<a href="list-product.php">Nokia</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li class="sub-menu">
+								<a href="#" class="sub-menu-toggle">Samsung <div class="label label-danger"><div class="arrow"></div>New</div> <span class="fa fa-angle-right"></span></a>
+								<ul>
+									<li>
+										<a href="list-product.php">note</a>
+									</li>
+									<li>
+										<a href="list-product.php">das</a>
+									</li>
+									<li>
+										<a href="list-product.php">samu</a>
+									</li>
+									<li>
+										<a href="list-product.php">smas</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li>
+								<a href="list-product.php">Lenovo <div class="label label-danger"><div class="arrow"></div>New</div></a>
+							</li>
+							<li>
+								<a href="list-product.php">Samsung</a>
+							</li>
+							<li>
+								<a href="list-product.php">Microsoft</a>
+							</li> -->
+						</ul>
+					</li><!-- fix inline-block
+					--><li class="col-xs-4">
+						<h4>Smartphone & Handy-zubehör</h4>
+						<ul>
+							<li>
+								<a href="list-product.php">Handy-Taschen</a>
+							</li>
+							<li>
+								<a href="list-product.php">Ladegeräte & Kabel</a>
+							</li>
+							<li>
+								<a href="list-product.php">Akkus & Powerbanks</a>
+							</li>
+							<li>
+								<a href="list-product.php">Headsets</a>
+							</li>
+						</ul>
+					</li><!-- fix inline-block
+						<li class="col-xs-4">
+						<h4>Video Games & Consoles</h4>
+						<ul>
+							<li>
+								<a href="list-product.php">Action</a>
+							</li>
+							<li>
+								<a href="list-product.php">Adventure</a>
+							</li>
+							<li>
+								<a href="list-product.php">Shooter</a>
+							</li>
+							<li>
+								<a href="list-product.php">Role-Playing Games (RPGs)</a>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+			<!-- 	<ul class="inner-nav-sub">
+					<li class="col-xs-4">
+						<h4>Phones & Accessories</h4>
+						<ul>
+							<li>
+								<a href="list-product.php">iPhone</a>
+							</li>
+							<li>
+								<a href="list-product.php">Samsung</a>
+							</li>
+							<li>
+								<a href="list-product.php">Sony</a>
+							</li>
+							<li>
+								<a href="list-product.php">Azus</a>
+							</li>
+						</ul>
+					</li>
+				</ul> -->
+			</div>
+		</li><!--
+		--><li class="active">
+			<a href="/">
+				<div class="nav-text">
+					<h2 class="text">Home</h2>
+					<h2 class="icon"><i class="fa fa-home"></i></h2>
+				</div>
+			</a>
+		</li><!--
+		--><li>
+			<a href="list-product.php">
+				<div class="nav-text">
+					<h2>Reparaturablaufe</h2>
+				</div>
+			</a>
+		</li><!--
+		--><li>
+			<a href="element.php">
+				<div class="nav-text">
+					<h2>Termine</h2>
+				</div>
+			</a>
+			<!--<ul class="nav-sub">
+				<li></li>
+				<li>หมวดหมู่</li>
+				<li></li>
+			</ul>-->
+		</li><!--
+		--><li>
+			<a href="contact">
+				<div class="nav-text">
+					<h2>Kontakt</h2>
+				</div>
+			</a>
+			<!--<ul class="nav-sub">
+				<li></li>
+				<li>หมวดหมู่</li>
+				<li></li>
+			</ul>-->
+		</li>
+	</ul>
+</nav>
